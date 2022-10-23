@@ -1,0 +1,36 @@
+.timer {
+	margin: 0 auto;
+	max-width: 350px;
+	height: 350px;
+	position: relative;
+	margin-top: 30px;
+}
+.front, .back {
+	background-color: rgba(255, 255, 255, 0.445);
+	border-radius: 100px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	transition: all 1.5s;
+	position: absolute !important;
+	backface-visibility: hidden;
+}
+.back {
+	transform: rotateY(180deg);
+}
+.timer * {
+	font-size: 4rem;
+	position: relative;
+	bottom: 10px;
+	color: #fff;
+	text-shadow: rgba(145, 145, 145, 0.397) 0px 0px 8px;
+}
+.break .front {
+	transform: rotateY(-180deg);
+}
+.break .back {
+	transform: rotateY(0deg);
+}

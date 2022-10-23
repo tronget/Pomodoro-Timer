@@ -1,0 +1,33 @@
+.timer-settings {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 600px;
+	margin-top: 20px;
+}
+.timer-settings__btn {
+	font-size: 3rem;
+	padding: 0px 22px 6px;
+	background-color: rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	font-family: inherit;
+	position: relative;
+	top: 10px;
+	transition: all .4s;
+}
+.timer-settings__btn:hover {
+	background-color:rgba(255, 255, 255, 0.356);
+}
+.timer-settings__btn:active {
+	transform: scale(.75);
+}
+
+.timer-settings.active :not(.timer-settings__btn) {
+	opacity: 0;
+	visibility: hidden;
+	transition: .5s;
+}
